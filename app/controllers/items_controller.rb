@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
  before_action :authenticate_user!, only: [:new, :destroy, :update, :create, :edit]
-
+ before_action :set_item, only: [:show, :update, :edit, :destroy]
+ before_action :redirect_item, only: [:edit, :update, :destroy]
 
  def index
   @items= Item.all
@@ -9,6 +10,7 @@ class ItemsController < ApplicationController
 
  def new
   @item = Item.new
+
  end
 
 
@@ -22,6 +24,8 @@ class ItemsController < ApplicationController
  end
 
  def show
+  @items= Item.all
+ 
  end
 
  def update
@@ -33,6 +37,7 @@ class ItemsController < ApplicationController
  end
 
  def edit
+  @items= Item.all
  end
 
  def destroy
@@ -45,11 +50,27 @@ class ItemsController < ApplicationController
 
 
 
- private
+  private
+
+ def set_item
+  @item = Item.find(params[:id])
+end
 
 
+def redirect_item
+  #unless user_signed_in? && @item.buy.nil? 
+    redirect_to action: :index
+   #end
+end
+
+
+<<<<<<< Updated upstream
 def item_params
+    params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name, :text).merge(user_id: current_user.id)
+=======
+  def item_params
     params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name,:text).merge(user_id: current_user.id)
+>>>>>>> Stashed changes
   end
 
 end
