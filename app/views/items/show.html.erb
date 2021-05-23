@@ -8,17 +8,30 @@
     <div class="item-img-content">
       <%= image_tag @item.image, class:"item-box-img" %>
     
+<<<<<<< Updated upstream
       <%# if @item.buy.present? %>
         <div class="sold-out">
           <span>Sold Out!!</span>
         </div>
       <%# end %>
     </div>
+=======
+    <%#if @item.buy.present? %>
+      <div class="sold-out">
+        <span>Sold Out!!</span>
+      </div>
+    <%#end %>
+
+>>>>>>> Stashed changes
 
     
 
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+<<<<<<< Updated upstream
     <%# if user_signed_in? && @item.buy.nil? %>
+=======
+    <%#if user_signed_in? && @item.buy.nil? %>
+>>>>>>> Stashed changes
      <% if current_user.id == @item.user_id %>
       <%= link_to "商品の編集", edit_item_path, method: :get, class: "item-red-btn" %>
       <p class="or-text">or</p>
@@ -30,13 +43,17 @@
 
 
     <div class="item-explain-box">
-      <span><%= "商品説明" %></span>
+      <span><%= @item.text %></span>
     </div>
     <table class="detail-table">
       <tbody>
         <tr>
           <th class="detail-item">出品者</th>
+<<<<<<< Updated upstream
           <td class="detail-value"><%= @item.user.name %></td>
+=======
+          <td class="detail-value"><%= @item.user.username %></td>
+>>>>>>> Stashed changes
         </tr>
         <tr>
           <th class="detail-item">カテゴリー</th>
@@ -50,8 +67,12 @@
         <tr>
           <th class="detail-item">発送元の地域</th>
           <td class="detail-value"><%= @item.country.name %></td>
+<<<<<<< Updated upstream
         </tr>
         
+=======
+        </tr>  
+>>>>>>> Stashed changes
       </tbody>
     </table>
     <div class="option">
@@ -65,6 +86,10 @@
       </div>
     </div>
   </div>
+<<<<<<< Updated upstream
+=======
+  
+>>>>>>> Stashed changes
 
   <div class="comment-box">
     <form>
@@ -88,8 +113,14 @@
       後ろの商品 ＞
     </a>
   </div>
+<<<<<<< Updated upstream
   
   <a href="#" class="another-item"><%= @item.category.name %>をもっと見る</a>
   
+=======
+  <%# 詳細ページで表示されている商品のカテゴリー名を表示しましょう %>
+  <a href="#" class="another-item"><%= @item.category.name %>をもっと見る</a>
+  <%# //詳細ページで表示されている商品のカテゴリー名を表示しましょう %>
+>>>>>>> Stashed changes
 </div>
 <%= render "shared/footer" %>

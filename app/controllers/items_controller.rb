@@ -50,7 +50,7 @@ class ItemsController < ApplicationController
 
 
 
- private
+  private
 
  def set_item
   @item = Item.find(params[:id])
@@ -64,8 +64,13 @@ def redirect_item
 end
 
 
+<<<<<<< Updated upstream
 def item_params
     params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name, :text).merge(user_id: current_user.id)
+=======
+  def item_params
+    params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name,:text).merge(user_id: current_user.id)
+>>>>>>> Stashed changes
   end
 
 end
