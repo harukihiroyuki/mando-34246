@@ -121,12 +121,12 @@
   <%# 商品一覧 %>
   <div class='item-contents'>
     <h2 class='title'>お届け物資一覧</h2>
-    <%= link_to 'お届け商品', items_path, class: "subtitle" %>
+    <%= link_to 'お届け商品', new_item_path, class: "subtitle" %>
     <ul class='item-lists'>
 
     <% @items.each do |item| %> 
       <li class='list'>
-         <%= link_to items_path(item) do %>
+         <%= link_to item_path(item) do %>
           <div class='item-img-content'>
             <%= image_tag item.image, class: "item-img" %>
 
