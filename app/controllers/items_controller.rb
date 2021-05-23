@@ -37,6 +37,7 @@ class ItemsController < ApplicationController
  end
 
  def edit
+  @items= Item.all
  end
 
  def destroy
@@ -57,9 +58,9 @@ end
 
 
 def redirect_item
-  unless user_signed_in? && @item.buy.nil? 
+  #unless user_signed_in? && @item.buy.nil? 
     redirect_to action: :index
-   end
+   #end
 end
 
 

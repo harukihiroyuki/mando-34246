@@ -7,7 +7,7 @@ app/assets/stylesheets/items/new.css %>
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">商品の情報を入力</h2>
-    <%= form_with local: true do |f| %>
+    <%= form_with local:@item, local: true do |f| %>
 
     
     <%= render 'shared/error_messages', model:@item %>
@@ -140,7 +140,7 @@ app/assets/stylesheets/items/new.css %>
   <footer class="items-sell-footer">
     <ul class="menu">
       <li><a href="#">プライバシーポリシー</a></li>
-      <li><a href="#">フリマ利用規約</a></li>
+      <li><a href="#">mando利用規約</a></li>
       <li><a href="#">特定商取引に関する表記</a></li>
     </ul>
     <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
