@@ -1,11 +1,11 @@
 class ItemsController < ApplicationController
  before_action :authenticate_user!, only: [:new, :destroy, :update, :create, :edit]
- before_action :set_item, only: [:show, :update, :edit, :destroy]
- before_action :redirect_item, only: [:edit, :update, :destroy]
+ # before_action :set_item, only: [:show, :update, :edit, :destroy]
+ # before_action :redirect_item, only: [:edit, :update, :destroy]
 
  def index
   @items= Item.all
-  @items= Item.includes(:user).order("created_at DESC")
+  @item= Item.includes(:user).order("created_at DESC")
  end
 
  def new
@@ -24,44 +24,44 @@ class ItemsController < ApplicationController
  end
 
  def show
-  @items= Item.all
+  @item= Item.find(params[:id])
  
  end
 
- def update
-  if @item.update(item_params)
-    redirect_to item_path
-  else
-    render :edit
-  end
- end
+ # def update
+  # if @item.update(item_params)
+    # redirect_to item_path
+  # else
+    # render :edit
+  # end
+ # end
 
- def edit
-  @items= Item.all
- end
+ # def edit
+  # @items= Item.all
+ # end
 
- def destroy
-  if @item.destroy
-    redirect_to root_path
-  else
-    render :show
-  end
- end
+ # def destroy
+  # if @item.destroy
+    # redirect_to root_path
+  # else
+    # render :show
+  # end
+ # end
 
 
 
   private
 
- def set_item
-  @item = Item.find(params[:id])
-end
+ # def set_item
+  # @item = Item.find(params[:id])
+# end
 
 
-def redirect_item
+# def redirect_item
   #unless user_signed_in? && @item.buy.nil? 
-    redirect_to action: :index
+    # redirect_to action: :index
    #end
-end
+# end
 
 
 def item_params
