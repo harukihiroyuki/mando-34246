@@ -5,15 +5,18 @@ class Item < ApplicationRecord
  has_one_attached :image
  belongs_to :item_condition
  belongs_to :country
- has_one :buy
+ belongs_to :nation
+ has_many :comments
+ 
 
  with_options presence: true do
   validates :text
   validates :name
   validates :image
+  validates :city
 end
 
- validates :category_id, :item_condition_id, :country_id, numericality:{other_than:1}
+ validates :category_id, :item_condition_id, :country_id, :nation_id, numericality:{other_than:1}
 
 
 end

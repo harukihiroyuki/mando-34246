@@ -14,3 +14,6 @@ ja:
         item_condition_id: 商品の状態
         country_id: 発送元の地域
         user: ユーザー
+        nation_id: 発送先の国
+        city: 発送先の都市
+        

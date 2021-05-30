@@ -27,7 +27,7 @@
     <ul class='reason-lists'>
       <li class='list'>
         <%= image_tag "mando-image4.jpg", class:"list-pict" %>
-        <span class='reason-list-number'>1</span>
+        <%# <span class='reason-list-number'></span> %>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'></span>
           子どもたちを笑顔にできる
@@ -37,7 +37,7 @@
       </li>
       <li class='list'>
         <%= image_tag "mando-image2.jpg", class:"list-pict" %>
-        <span class='reason-list-number'>2</span>
+        <%# <span class='reason-list-number'>2</span> %>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'>貧困</span>
           から救うことができる
@@ -48,7 +48,7 @@
       </li>
       <li class='list'>
         <%= image_tag "mando-image3.jpg", class:"list-pict" %>
-        <span class='reason-list-number'>3</span>
+        <%# <span class='reason-list-number'>3</span> %>
         <h3 class='reason-list-text'>
           ワクチン
           <span class='reason-list-blue-text'>を購入できる</span>
@@ -72,7 +72,7 @@
       救援物資の送付数も業界最多です！
     </p>
     <p class='ad-explain'>
-      世界中を笑顔にすることができます
+      世界中を笑顔にすることができます！
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
@@ -130,11 +130,7 @@
           <div class='item-img-content'>
             <%= image_tag item.image, class: "item-img" %>
 
-            <%#if item.buy.present? %>
-              <%# <div class='sold-out'> %>
-                <%# <span>Sold Out!!</span> %>
-              <%# </div> %>
-            <%# end %>
+            
 
           </div>
           <div class='item-info'>

@@ -2,8 +2,10 @@ FactoryBot.define do
  factory :item do
    text {Faker::Lorem.sentence}
    name {Faker::Lorem.sentence}
+   city {Faker::Lorem.sentence}
    category_id {3}
    item_condition_id {3}
+   nation_id {3}
    country_id {2}
    association :user
    after(:build) do |item|

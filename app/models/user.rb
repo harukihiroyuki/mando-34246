@@ -16,5 +16,6 @@ class User < ApplicationRecord
         end
     
       has_many :items
-      #has_many :sends
+      has_many :comments
+    
 end

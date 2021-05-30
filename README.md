@@ -10,7 +10,7 @@
 | firstname            | string     | null: false                   |
 | birthday             | date       | null: false                   |
 - has_many :items
-- has_many :buys
+- has_one :address
 
 
 
@@ -24,18 +24,10 @@
 | country_id        | integer    | null: false                     |
 | user              | references | null: false, foreign_key: true  |
 | text              | text       | null: false                     |
+| nation_id         | integer    | null: false                     |
+| city              | string     | null: false                     |
 - belongs_to :user
-- has_one :buy
-## buysテーブル
 
-| Column     | Type       | Options                           |
-| ------     | ------     | -----------                       |
-| item       | references | null: false, foreign_key :true    |
-| user       | references | null: false, foreign_key :true    |
-
-- belongs_to :user
-- belongs_to :item
-- has_one :address
 
 
 ## addressesテーブル
@@ -44,7 +36,8 @@
 | ------           | ------        | -----------                      |
 | country_id       | integer       | null: false                      |
 | city             | string        | null: false                      |
-- belongs_to :buy
+belongs_to :user
+
 =======# README
 
 This README would normally document whatever steps are necessary to get the

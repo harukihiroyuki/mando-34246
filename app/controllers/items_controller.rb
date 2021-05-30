@@ -25,47 +25,20 @@ class ItemsController < ApplicationController
 
  def show
   @item= Item.find(params[:id])
- 
  end
 
- # def update
-  # if @item.update(item_params)
-    # redirect_to item_path
-  # else
-    # render :edit
-  # end
- # end
+ 
 
- # def edit
-  # @items= Item.all
- # end
-
- # def destroy
-  # if @item.destroy
-    # redirect_to root_path
-  # else
-    # render :show
-  # end
- # end
+ 
 
 
 
   private
 
- # def set_item
-  # @item = Item.find(params[:id])
-# end
-
-
-# def redirect_item
-  #unless user_signed_in? && @item.buy.nil? 
-    # redirect_to action: :index
-   #end
-# end
-
+  
 
 def item_params
-    params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name, :text).merge(user_id: current_user.id)
-  end
+    params.require(:item).permit(:image, :category_id, :item_condition_id, :country_id, :name, :text, :nation_id, :city).merge(user_id: current_user.id)
+end
 
 end
