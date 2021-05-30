@@ -54,6 +54,16 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include('ユーザーを入力してください')
       end
+      it "発送先の国が空だと保存できない" do
+        @item.nation_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include("発送先の国は1以外の値にしてください")
+      end
+      it "発送先の都市が空だと保存できない" do
+        @item.city = ""
+        @item.valid?
+        expect(@item.errors.full_messages).to include("発送先の都市を入力してください")
+      end
     end
   end
 end

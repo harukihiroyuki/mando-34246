@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 2021_05_19_103130) do
     t.integer "item_condition_id"
     t.integer "country_id"
     t.bigint "user_id"
+    t.integer "nation_id"
+    t.string "city"
     t.text "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

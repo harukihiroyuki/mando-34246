@@ -36,7 +36,7 @@
           商品の説明
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（出品者の思い入れを記入してください。）" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
     <%# /商品名と商品説明 %>
@@ -55,6 +55,7 @@
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:item_condition_id, ItemCondition.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+
       </div>
     </div>
     <%# /商品の詳細 %>
@@ -71,6 +72,18 @@
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:country_id, Country.all, :id, :name, {}, {class:"select-box", id:"item-country"}) %>
+
+        <div class="weight-bold-text">
+          発送先の国
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:nation_id, Nation.all, :id, :name, {}, {class:"select-box", id:"item-nation"}) %>
+
+        <div class="weight-bold-text">
+        発送先の都市
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :city, class:"items-text", id:"item-name", placeholder:"発送先の都市", maxlength:"40" %>
       </div>
     </div>
     <%# /配送について %>
