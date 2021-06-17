@@ -163,18 +163,6 @@
   text-align: left;
 }
 
-.comment-btn {
-  line-height: 48px;
-  background-color: #000080;
-  border: 1px solid #000080;
-  color: #fff;
-  width: 50%;
-  min-width: 150px;
-  font-size: 18px;
-  border-radius: 100px;
-  margin-bottom: 2vh;
-}
-
 .comment-flag {
   display: flex;
   justify-content: center;
@@ -205,3 +193,8 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+.field {
+  font-size: 40px;
+}
+
