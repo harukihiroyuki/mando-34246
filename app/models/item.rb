@@ -8,6 +8,7 @@ class Item < ApplicationRecord
  belongs_to :nation
  has_many :comments
  
+ 
 
  with_options presence: true do
   validates :text
