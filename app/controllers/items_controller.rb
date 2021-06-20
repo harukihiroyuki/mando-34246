@@ -22,9 +22,9 @@ class ItemsController < ApplicationController
  end
 
  def show
-  @item= Item.find(params[:id])
-  @comments = @item.comments
-  @comment = current_user.comments.new
+    @item= Item.find(params[:id])
+    @comments = @item.comments
+    @comment = current_user.comments.new
  end
 
  
@@ -34,6 +34,8 @@ class ItemsController < ApplicationController
 
 
   private
+
+  
 
   
 
