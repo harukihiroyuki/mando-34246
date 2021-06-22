@@ -69,7 +69,7 @@
     </div>
 
     <% if user_signed_in? %>
-         <%= form_with model:[@item, @comment], local: true do |f| %> 
+         <%= form_with model:[@item,@comment], local: true do |f| %> 
            <div class="field">
              <%= f.label :text, "コメント" %><br />
              <%= f.text_field :text, id:"comment_text" %>
