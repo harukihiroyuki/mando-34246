@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
- before_action :authenticate_user!, only: [:new, :destroy, :update, :create, :edit]
+ before_action :authenticate_user!, only: [:new, :destroy, :update, :create, :edit, :show]
  
  def index
   @items= Item.all
@@ -24,7 +24,7 @@ class ItemsController < ApplicationController
  def show
    @comment = current_user.comments.new
    @item= Item.find(params[:id])
-   @comments = @item.comments
+   @comments = @item.comments.includes(:user)
   end
 
  
