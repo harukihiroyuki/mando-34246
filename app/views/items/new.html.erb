@@ -10,7 +10,7 @@
     
     <%= render 'shared/error_messages', model:@item %>
 
-    <%# 商品画像 %>
+    
     <div class="img-upload">
       <div class="weight-bold-text">
         商品画像
@@ -23,8 +23,7 @@
         <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
-    <%# /商品画像 %>
-    <%# 商品名と商品説明 %>
+    
     <div class="new-items">
       <div class="weight-bold-text">
         商品名
@@ -39,9 +38,9 @@
         <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（出品者の思い入れを記入してください。）" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
-    <%# /商品名と商品説明 %>
+    
 
-    <%# 商品の詳細 %>
+    
     <div class="items-detail">
       <div class="weight-bold-text">商品の詳細</div>
       <div class="form">
@@ -58,9 +57,9 @@
 
       </div>
     </div>
-    <%# /商品の詳細 %>
+    
 
-    <%# 配送について %>
+    
     <div class="items-detail">
       <div class="weight-bold-text question-text">
         <span>配送について</span>
@@ -86,33 +85,22 @@
       <%= f.text_area :city, class:"items-text", id:"item-name", placeholder:"発送先の都市", maxlength:"40" %>
       </div>
     </div>
-    <%# /配送について %>
+    
 
-    <%# 注意書き %>
+    
     <div class="caution">
       <p class="sentence">
-        <a href="#">禁止されている出品、</a>
+        <a href="#">禁止されている</a>
         <a href="#">行為</a>
         を必ずご確認ください。
       </p>
-      <p class="sentence">
-        またブランド品でシリアルナンバー等がある場合はご記載ください。
-        <a href="#">偽ブランドの販売</a>
-        は犯罪であり処罰される可能性があります。
-      </p>
-      <p class="sentence">
-        また、出品をもちまして
-        <a href="#">加盟店規約</a>
-        に同意したことになります。
-      </p>
     </div>
-    <%# /注意書き %>
-    <%# 下部ボタン %>
+    
     <div class="sell-btn-contents">
       <%= f.submit "出品する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
-    <%# /下部ボタン %>
+    
   </div>
   <% end %>
 

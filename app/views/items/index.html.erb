@@ -19,7 +19,6 @@
   </div>
   
 
-  <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents'>
     <h2 class='title'>
       mandoが選ばれる理由
@@ -55,28 +54,22 @@
       </li>
     </ul>
   </div>
-  <%# /FURIMAが選ばれる3つの理由部分 %>
 
-  <%# 画面中央の「会員数日本一位」帯部分 %>
+
+  
   <div class='ad-contents'>
-    <h2 class='ad-title'>
-      会員数日本一位
-    </h2>
     <p class='ad-explain'>
       mandoは、断捨離アプリで最も人気。
     </p>
     <p class='ad-explain'>
-      救援物資の送付数も業界最多です！
-    </p>
-    <p class='ad-explain'>
-      世界中を笑顔にすることができます！
+      世界中を笑顔に!
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
       <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
     </div>
   </div>
-  <%# /画面中央の「会員数日本一位」帯部分 %>
+  
 
   
   <div class='feature-contents'>
@@ -115,7 +108,7 @@
   </div>
   
 
-  <%# 商品一覧 %>
+  
   <div class='item-contents'>
     <h2 class='title'>お届け物資一覧</h2>
     <%= link_to 'お届け商品', new_item_path, class: "subtitle" %>
@@ -153,7 +146,7 @@
      <% end %>
     </ul>
   </div>
-  <%# /商品一覧 %>
+  
 </div>
 <%= link_to new_item_path, class: 'purchase-btn' do %>
   <span class='purchase-btn-text'>出品する</span>
