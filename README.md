@@ -39,26 +39,28 @@
 belongs_to :user
 
 =======# README
+アプリケーション名	mando
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリケーション概要 いらないものを断捨離し捨てる代わりに貧しい国への援助に役立てる
 
-Things you may want to cover:
+URL	 https://mando-34246.herokuapp.com/
 
-* Ruby version
+テスト用アカウント	mail sss@sss
+password hiroyuki0823
 
-* System dependencies
+basic認証
 
-* Configuration
+ID HIROYUKI
 
-* Database creation
+Password Hiroyuki0823
 
-* Database initialization
+利用方法	ログインし商品を出品すると海外の貧しい国に活くることができる
 
-* How to run the test suite
+目指した課題解決	このアプリを作成した経緯は中学校で教師をしている友人と話をしていた時に道徳の授業で貧しい国のことを教えているが、何もできないと言われたからです。
+断捨離をしていてもったいないと感じた経験が私にもあるので、これを機に何かできないか考えました。
+断捨離する物資を海外の貧しい国人が利用できれば、環境問題の解決に繋がり、貧しい国人たちの助けになる活動ができると感じたからです。
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
