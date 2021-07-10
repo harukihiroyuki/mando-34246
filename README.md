@@ -107,7 +107,7 @@ JavaScript
 
 データベース
 
-Mysql
+Mysql sequelpro
 
 インフラ
 
