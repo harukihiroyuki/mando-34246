@@ -50,9 +50,9 @@ password hiroyuki0823
 
 basic認証
 
-ID HIROYUKI
+ID hiroyuki
 
-Password Hiroyuki0823
+Password hiroyuki0823
 
 利用方法	ログインし商品を出品すると海外の貧しい国に活くることができる
 
