@@ -8,7 +8,8 @@ a {
 
 .title-contents {
   width: 100vw;
-  background-image: url(dots.svg),image-url('mando1.jpg');
+  background-image: url(dots.svg),image-url('mando1.jpg'),;
+  filter: brightness(120%);
   background-size: 90px 20px, cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -119,6 +120,7 @@ a {
 .ad-contents {
   width: 100vw;
   background-image: url(dots.svg),image-url('mando2.jpg');
+  filter: brightness(150%);
   background-size: 50px cover;
   background-repeat: no-repeat;
   background-position: top center;
