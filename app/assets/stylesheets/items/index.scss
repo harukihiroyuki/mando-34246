@@ -9,7 +9,7 @@ a {
 .title-contents {
   width: 100vw;
   background-image: url(dots.svg),image-url('mando1.jpg'),;
-  filter: brightness(120%);
+  filter: grayscale(100%);
   background-size: 90px 20px, cover;
   background-repeat: no-repeat;
   background-position: top center;
