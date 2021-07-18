@@ -9,12 +9,6 @@
   flex-direction: column;
 }
 
-.search-bar-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .furima-icon {
   width: 20vw;
   margin-right: 10vw;
