@@ -1,10 +1,10 @@
-<mxfile>
+<mxfile host="65bd71144e">
     <diagram id="Ye6FuzTYFBLY8pKLKPYI" name="ページ1">
-        <mxGraphModel dx="578" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="453" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.459;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classicThin;startFill=1;" edge="1" parent="1" source="3" target="5">
+                <mxCell id="11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.459;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classicThin;startFill=1;" parent="1" source="3" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="items&lt;br style=&quot;font-size: 13px&quot;&gt;name string null :false&lt;br style=&quot;font-size: 13px&quot;&gt;category_id integer null :false&lt;br style=&quot;font-size: 13px&quot;&gt;item_conditino_id integer null :false&lt;br&gt;city string null :false&lt;br&gt;nation_id integer null :false&lt;br style=&quot;font-size: 13px&quot;&gt;country_id integer null :false&lt;br style=&quot;font-size: 13px&quot;&gt;user references null :false, foreign_key :true&lt;br style=&quot;font-size: 13px&quot;&gt;text text null :false&lt;br style=&quot;font-size: 13px&quot;&gt;belongs_to :user" style="whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fontSize=13;" parent="1" vertex="1">
